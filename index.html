@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile UPN</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/1.13.7/css/dataTables.bootstrap5.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script
+      defer
+      src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdn.datatables.net/1.13.7/js/dataTables.bootstrap5.min.js"
+    ></script>
+    <script defer src="js/index.js"></script>
+    <script defer src="js/data.js"></script>
+  </head>
+  <body>
+    <button
+      onclick="topFunction()"
+      id="myBtn"
+      class="bi bi-arrow-up-circle-fill bi-lg bg-transparent"
+      title="Go to top"
+      style="font-size: 36px"
+    ></button>
+    <!--Navbar-->
+    <nav
+      class="navbar navbar-expand-lg bg-transparant navbar-light fixed-top sticky-navbar"
+    >
+      <div class="container">
+        <a href="#" class="navbar-brand d-block d-lg-none">
+          <span class="fs-4 fw-bolder text-success">UPNVJ</span
+          ><span class="fs-4 fw-bold text-success-emphasis">Discover</span>
+        </a>
+        <button
+          class="navbar-toggler ms-auto"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item fs-5">
+              <a href="#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item fs-5 dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Faculty
+              </a>
+              <ul class="dropdown-menu bg-body-secondary">
+                <li>
+                  <a class="dropdown-item" href="faculty/feb.html"
+                    >Ekonomi dan Bisnis</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="faculty/fk.html">Kedokteran</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="faculty/ft.html">Teknik</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="faculty/fisip.html"
+                    >Ilmu Sosial dan Politik</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="faculty/fik.html"
+                    >Ilmu Komputer</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="faculty/fh.html">Hukum</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="faculty/fikes.html"
+                    >Kesehatan</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#faculty">View all</a></li>
+              </ul>
+            </li>
+            <li class="nav-item fs-5">
+              <a href="#location" class="nav-link">Location</a>
+            </li>
+            <li class="nav-item fs-5">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <a href="#" class="navbar-brand d-none d-lg-block">
+          <span class="fs-4 fw-bolder text-success">UPNVJ</span
+          ><span class="fs-4 fw-bold text-success-emphasis">Discover</span></a
+        >
+      </div>
+    </nav>
+
+    <img class="img-fluid" src="images/wisuda.jpg" alt="background-top" />
+
+    <!--About Section-->
+    <section
+      id="about"
+      class="about text-dark text-center text-sm-start pb-sm-0"
+    >
+      <div class="container">
+        <div class="d-flex align-items-center">
+          <div>
+            <h1 class="fw-bold">
+              <span class="text-success">UPN</span>
+              <span>Veteran</span>
+              <span>Jakarta</span>
+            </h1>
+            <p class="lead">
+              UPN Veteran Jakarta mempersembahkan fasilitas untuk kemajuan ilmu
+              pengetahuan dan teknologi, bertumpu pada prinsip-prinsip
+              universal, dengan tekad menggapai kebenaran ilmiah yang terpancar
+              dalam segala aspeknya.
+            </p>
+            <a href="#timeline" class="btn btn-success btn-lg"> Cari Tahu! </a>
+          </div>
+          <img
+            class="img-fluid w-50 d-none d-sm-block ms-2"
+            src="images/about.svg"
+            alt="gambar-upn"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!--Banner Section-->
+    <section class="main-banner bg_image bg-success pt-5 pb-5">
+      <h1 class="text-center fw-bolder text-success-emphasis pb-2">
+        Branches at <span class="text-white">UPN</span>
+      </h1>
+      <div class="container container-banner pt-5 pb-5">
+        <div class="coloumn mx-auto">
+          <div onmouseover='imgChange("images/UPNVJ.png")' class="col">
+            <a
+              class="text-black"
+              href="https://www.upnvj.ac.id/"
+              target="_blank"
+            >
+              <p>UPNV JAKARTA</p></a
+            >
+          </div>
+          <div onmouseover='imgChange("images/UPNVY.png")' class="col">
+            <a
+              class="text-black"
+              href="https://www.upnyk.ac.id/"
+              target="_blank"
+            >
+              <p>UPNV YOGYAKARTA</p></a
+            >
+          </div>
+          <div onmouseover='imgChange("images/UPNVJT.jpg")' class="col">
+            <a
+              class="text-black"
+              href="https://www.upnjatim.ac.id/"
+              target="_blank"
+            >
+              <p>UPNV JAWA TIMUR</p></a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Faculty Section -->
+    <section id="faculty">
+      <div class="container py-5">
+        <h1 class="text-center fw-bolder pt-5">
+          <span class="text-secondary-emphasis">Faculties at</span>
+          <span class="text-success">UPNVJ</span>
+        </h1>
+        <div class="row row-cols-1 row-cols-md-3 text-center g-3 py-5">
+          <div class="col">
+            <div class="card bg-light text-dark">
+              <img
+                src="images/FEB.svg"
+                class="card-img-top p-2"
+                alt="gambar-feb"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Fakultas Ekonomi dan Bisnis</h5>
+                <p class="card-text">
+                  Menawarkan program ekonomi dan bisnis dengan fokus pada
+                  pengembangan profesionalisme.
+                </p>
+              </div>
+              <div class="d-flex justify-content-around mb-5">
+                <a href="faculty/feb.html" class="btn btn-success"
+                  >Selengkapnya</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card bg-success-subtle text-dark">
+              <img
+                src="images/FK.svg"
+                class="card-img-top p-2"
+                alt="gambar-fk"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Fakultas Kedokteran</h5>
+                <p class="card-text">
+                  Fakultas ini bergerak pada dunia medis dengan fokus pada
+                  pengembangan praktisi kesehatan.
+                </p>
+              </div>
+              <div class="d-flex justify-content-around mb-5">
+                <a href="faculty/fk.html" class="btn btn-success"
+                  >Selengkapnya</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card bg-light text-dark">
+              <img
+                src="images/FT.svg"
+                class="card-img-top p-2"
+                alt="gambar-ft"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Fakultas Teknik</h5>
+                <p class="card-text">
+                  Berinovasi dan mengembangkan teknologi melalui pendidikan
+                  serta praktik dalam disiplin ilmu teknik.
+                </p>
+              </div>
+              <div class="d-flex justify-content-around mb-5">
+                <a href="faculty/ft.html" class="btn btn-success"
+                  >Selengkapnya</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card bg-success-subtle text-dark">
+              <img
+                src="images/FISIP.svg"
+                class="card-img-top p-2"
+                alt="gambar-fisip"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Fakultas Ilmu Sosial dan Politik</h5>
+                <p class="card-text">
+                  Mempelajari ilmu yang berfokus pada pemahaman mengenai
+                  dinamika sosial, politik, dan HAM.
+                </p>
+              </div>
+              <div class="d-flex justify-content-around mb-5">
+                <a href="faculty/fisip.html" class="btn btn-success"
+                  >Selengkapnya</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card bg-light text-dark">
+              <img
+                src="images/FIK.svg"
+                class="card-img-top p-2"
+                alt="gambar-fik"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Fakultas Ilmu Komputer</h5>
+                <p class="card-text">
+                  Mempelajari pemrograman khususnya pada bidang IT, kemanan
+                  jaringan, AI, dan inovasi baru.
+                </p>
+              </div>
+              <div class="d-flex justify-content-around mb-5">
+                <a href="faculty/fik.html" class="btn btn-success"
+                  >Selengkapnya</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card bg-success-subtle text-dark">
+              <img
+                src="images/FH.svg"
+                class="card-img-top p-2"
+                alt="gambar-fh"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Fakultas Hukum</h5>
+                <p class="card-text">
+                  Berfokus pada bidang ilmu hukum yang beretika terkait pada
+                  sistem hukum yang ada Indonesia.
+                </p>
+              </div>
+              <div class="d-flex justify-content-around mb-5">
+                <a href="faculty/fh.html" class="btn btn-success"
+                  >Selengkapnya</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col mx-auto">
+            <div class="card bg-light text-dark">
+              <img
+                src="images/FIKKES.svg"
+                class="card-img-top p-2"
+                alt="gambar-fikes"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Fakultas Kesehatan</h5>
+                <p class="card-text">
+                  berfokus pada pengembangan praktisi kesehatan berintegritas,
+                  dan siap berkontribusi dalam dunia kesehatan.
+                </p>
+              </div>
+              <div class="d-flex justify-content-around mb-5">
+                <a href="faculty/fikes.html" class="btn btn-success"
+                  >Selengkapnya</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Alumni Section -->
+    <section id="alumni">
+      <div class="container py-5">
+        <h1 class="fw-bold mb-5" style="display: flex; justify-content: center">
+          Look for our
+          <span class="text-success" style="margin-left: 15px"> Alumni</span>
+        </h1>
+        <table id="example" class="table table-striped" style="width: 100%">
+          <thead>
+            <tr>
+              <th>Nama</th>
+              <th>Jurusan</th>
+              <th>Jalur</th>
+              <th>Angkatan</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Danella Mirabel</td>
+              <td>Akuntansi</td>
+              <td>SNBP</td>
+              <td>2023</td>
+            </tr>
+            <tr>
+              <td>Anggi Isnaini</td>
+              <td>Farmasi</td>
+              <td>SNBP</td>
+              <td>2023</td>
+            </tr>
+            <tr>
+              <td>Melda Juwita Syafilla</td>
+              <td>Fisioterapi</td>
+              <td>SNBP</td>
+              <td>2023</td>
+            </tr>
+            <tr>
+              <td>Nabillah Az Zahra Ramadhani</td>
+              <td>Gizi</td>
+              <td>SNBP</td>
+              <td>2023</td>
+            </tr>
+            <tr>
+              <td>Naila Rahmadani Mudzalifah</td>
+              <td>Gizi</td>
+              <td>SNBP</td>
+              <td>2023</td>
+            </tr>
+            <tr>
+              <td>Aghnia Ilmi Diniyati</td>
+              <td>Gizi</td>
+              <td>SNBP</td>
+              <td>2023</td>
+            </tr>
+            <tr>
+              <td>Chintya Rachma Hudaya</td>
+              <td>Hukum</td>
+              <td>SNBP</td>
+              <td>2023</td>
+            </tr>
+            <tr>
+              <td>Serly Alfionita</td>
+              <td>Hukum</td>
+              <td>SNBP</td>
+              <td>2023</td>
+            </tr>
+            <tr>
+              <td>Rahma Alia</td>
+              <td>Ilmu Komunikasi</td>
+              <td>SNBP</td>
+              <td>2023</td>
+            </tr>
+            <tr>
+              <td>Amanda Putri Wunu</td>
+              <td>Ilmu Komunikasi</td>
+              <td>SNBP</td>
+              <td>2023</td>
+            </tr>
+            <tr>
+              <td>Nazwatuzzahro</td>
+              <td>Informatika</td>
+              <td>SNBP</td>
+              <td>2023</td>
+            </tr>
+            <tr>
+              <td>Ajla Syifa Fakhriya</td>
+              <td>Informatika</td>
+              <td>SNBP</td>
+              <td>2023</td>
+            </tr>
+            <tr>
+              <td>Nadia Putri Cantika</td>
+              <td>Kedokteran</td>
+              <td>SNBP</td>
+              <td>2023</td>
+            </tr>
+            <tr>
+              <td>Liyana Nurul Fatimah</td>
+              <td>Perbankan dan Keuangan</td>
+              <td>SNBP</td>
+              <td>2023</td>
+            </tr>
+            <tr>
+              <td>Nazwa Putri Nurfadillah</td>
+              <td>Teknik Industri</td>
+              <td>SNBP</td>
+              <td>2023</td>
+            </tr>
+            <tr>
+              <td>Luthfi Rizal</td>
+              <td>Ilmu Komunikasi</td>
+              <td>SNBT</td>
+              <td>2023</td>
+            </tr>
+            <tr>
+              <td>Rafa Thahira Santoso</td>
+              <td>Informatika</td>
+              <td>SNBT</td>
+              <td>2023</td>
+            </tr>
+            <tr>
+              <td>Audy Salsabila</td>
+              <td>Kesehatan Masyarakat</td>
+              <td>SNBT</td>
+              <td>2023</td>
+            </tr>
+            <tr>
+              <td>Nahila Iftina Putri</td>
+              <td>Manajemen</td>
+              <td>SNBT</td>
+              <td>2023</td>
+            </tr>
+            <tr>
+              <td>Muhammad Hafidz Khairullah</td>
+              <td>Sistem Informasi</td>
+              <td>SNBT</td>
+              <td>2023</td>
+            </tr>
+            <tr>
+              <td>Nasywa Faridatus Salima</td>
+              <td>Akuntansi</td>
+              <td>SM</td>
+              <td>2023</td>
+            </tr>
+            <tr>
+              <td>Nazala Fiolani</td>
+              <td>Hubungan Internasional</td>
+              <td>SM</td>
+              <td>2023</td>
+            </tr>
+            <tr>
+              <td>Olivia Lestari Siadari</td>
+              <td>Hukum</td>
+              <td>SM</td>
+              <td>2023</td>
+            </tr>
+            <tr>
+              <td>Nadya Ramadhanty</td>
+              <td>Manajemen</td>
+              <td>SM</td>
+              <td>2023</td>
+            </tr>
+            <tr>
+              <td>Alya Izza Sabila</td>
+              <td>Sistem Informasi (D3)</td>
+              <td>SM</td>
+              <td>2023</td>
+            </tr>
+            <tr>
+              <td>Sabilah Fitriyah Romadona</td>
+              <td>Gizi</td>
+              <td>SNMPTN</td>
+              <td>2022</td>
+            </tr>
+            <tr>
+              <td>Neysa Vania Sitinjak</td>
+              <td>Hubungan Internasional</td>
+              <td>SNMPTN</td>
+              <td>2022</td>
+            </tr>
+            <tr>
+              <td>Naia Zhafira Munandar</td>
+              <td>Hukum</td>
+              <td>SNMPTN</td>
+              <td>2022</td>
+            </tr>
+            <tr>
+              <td>Zahra Nurcahyani Saputra</td>
+              <td>Hukum</td>
+              <td>SNMPTN</td>
+              <td>2022</td>
+            </tr>
+            <tr>
+              <td>Seprilia Sekar Ningrum</td>
+              <td>Ilmu Komunikasi</td>
+              <td>SNMPTN</td>
+              <td>2022</td>
+            </tr>
+            <tr>
+              <td>Hary Capri</td>
+              <td>Informatika</td>
+              <td>SNMPTN</td>
+              <td>2022</td>
+            </tr>
+            <tr>
+              <td>Diza Kristalia</td>
+              <td>Kedokteran</td>
+              <td>SNMPTN</td>
+              <td>2022</td>
+            </tr>
+            <tr>
+              <td>Ghefira Auliawati</td>
+              <td>Manajemen</td>
+              <td>SNMPTN</td>
+              <td>2022</td>
+            </tr>
+            <tr>
+              <td>Lintang Lucida Selvana</td>
+              <td>Manajemen</td>
+              <td>SBMPTN</td>
+              <td>2022</td>
+            </tr>
+            <tr>
+              <td>Aria Budi Abraham</td>
+              <td>Akuntansi</td>
+              <td>SNMPTN</td>
+              <td>2021</td>
+            </tr>
+            <tr>
+              <td>Hafizh Fadhilah Atmadja</td>
+              <td>Manajemen</td>
+              <td>SBMPTN</td>
+              <td>2021</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Timeline Section -->
+
+    <section id="timeline" class="bg-light mt-0">
+      <h1 class="container timeline-title text-center fw-bolder">
+        <span class="text-success-emphasis"></span>History of
+        <span class="text-success">UPNVJ</span>
+      </h1>
+      <div class="timeline">
+        <div class="container-timeline left-container">
+          <img src="images/logo-upn.png" />
+          <div class="text-box">
+            <h2>1958.</h2>
+            <small>15 Desember</small>
+            <p>
+              Pendirian Akademi Pembangunan Nasional "Veteran" di Yogyakarta
+              dengan beberapa jurusan.
+            </p>
+            <span class="left-container-arrow"></span>
+          </div>
+        </div>
+        <div class="container-timeline right-container">
+          <img src="images/logo-upn.png" />
+          <div class="text-box">
+            <h2>1967.</h2>
+            <small>21 Februari</small>
+            <p>
+              Berdirinya tiga akademi di bawah naungan Lembaga Pembinaan Kader
+              Pembangunan (LPKP).
+            </p>
+            <span class="right-container-arrow"></span>
+          </div>
+        </div>
+        <div class="container-timeline left-container">
+          <img src="images/logo-upn.png" />
+          <div class="text-box">
+            <h2>1977.</h2>
+            <small>30 November</small>
+            <p>
+              PPTN "Veteran" Cabang Jakarta berubah nama menjadi Universitas
+              Pembangunan Nasional "Veteran" Cabang Jakarta.
+            </p>
+            <span class="left-container-arrow"></span>
+          </div>
+        </div>
+        <div class="container-timeline right-container">
+          <img src="images/logo-upn.png" />
+          <div class="text-box">
+            <h2>1993.</h2>
+            <small>27 Februari</small>
+            <p>
+              UPN Veteran Cabang Jakarta menjadi universitas yang mandiri penuh
+              setelah beripisah dari UPN Veteran Yogyakarta.
+            </p>
+            <span class="right-container-arrow"></span>
+          </div>
+        </div>
+        <div class="container-timeline left-container">
+          <img src="images/logo-upn.png" />
+          <div class="text-box">
+            <h2>1994.</h2>
+            <small>29 November</small>
+            <p>
+              Perubahan status dari Perguruan Tinggi Kedinasan menjadi Perguruan
+              Tinggi Swasta.
+            </p>
+            <span class="left-container-arrow"></span>
+          </div>
+        </div>
+        <div class="container-timeline right-container">
+          <img src="images/logo-upn.png" />
+          <div class="text-box">
+            <h2>2000.</h2>
+            <small>-</small>
+            <p>
+              Seluruh program - program studi yang berada di bawah fakultas
+              UPNVJ berhasil mendapatkan akreditasi BAN-PT.
+            </p>
+            <span class="right-container-arrow"></span>
+          </div>
+        </div>
+        <div class="container-timeline left-container">
+          <img src="images/logo-upn.png" />
+          <div class="text-box">
+            <h2>2014.</h2>
+            <small>06 Oktober</small>
+            <p>UPNVJ ditetapkan menjadi Perguruan Tinggi Negeri.</p>
+            <span class="left-container-arrow"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location">
+      <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#hero-carousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#hero-carousel"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+        </div>
+
+        <div class="carousel-inner mb-5">
+          <div class="carousel-item active c-item">
+            <img
+              src="images/pondok-labu.png"
+              class="d-block w-100 c-img"
+              alt="Slide 1"
+            />
+            <div class="carousel-caption top-0 mt-4">
+              <p class="text-uppercase fs-3 mt-5">Location</p>
+              <p class="display-1 fs-1 fw-bold text-capitalize">
+                Jakarta - Pondok Labu
+              </p>
+              <button
+                class="btn btn-success px-4 py-2 fs-5 mt-5"
+                data-bs-toggle="modal"
+                data-bs-target="#booking-modal"
+              >
+                <a
+                  href="https://maps.app.goo.gl/isQuPLN2e185GxiDA"
+                  target="_blank"
+                  class="text-decoration-none text-light p-3"
+                  >Take a look</a
+                >
+              </button>
+            </div>
+          </div>
+          <div class="carousel-item c-item">
+            <img
+              src="images/limo.png"
+              class="d-block w-100 c-img"
+              alt="Slide 2"
+            />
+            <div class="carousel-caption top-0 mt-4">
+              <p class="text-uppercase fs-3 mt-5">Location</p>
+              <p class="display-1 fs-1 fw-bold text-capitalize">Depok - Limo</p>
+              <button
+                class="btn btn-success px-4 py-2 fs-5 mt-5"
+                data-bs-toggle="modal"
+                data-bs-target="#booking-modal"
+              >
+                <a
+                  href="https://maps.app.goo.gl/KW1a1YHqne5MCQAG9"
+                  target="_blank"
+                  class="text-decoration-none text-light p-3"
+                  >Take a look</a
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#hero-carousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#hero-carousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!--Contact Section -->
+    <section id="contact" class="p-5">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <div class="col-md">
+            <h2 class="text-center mb-4 fw-bold text-success-emphasis">
+              Contact <span class="text-success">Me</span>
+            </h2>
+            <ul class="list-group list-group-flush lead">
+              <li class="list-group-item">
+                <i class="bi bi-github"></i>
+                <span class="fw-bold">Github</span> <br /><a
+                  href="https://github.com/harycp"
+                  class="text-decoration-none lead text-black"
+                  >harycp</a
+                >
+              </li>
+              <li class="list-group-item">
+                <i class="bi bi-instagram"></i>
+                <span class="fw-bold">Instagram</span> <br /><a
+                  href="https://www.instagram.com/haryc._"
+                  class="text-decoration-none lead text-black"
+                  >@haryc._</a
+                >
+              </li>
+              <li class="list-group-item">
+                <i class="bi bi-envelope"></i>
+                <span class="fw-bold">Email</span>
+                <br /><a
+                  href="mailto:2210511023@mahasiswa.upnvj.ac.id"
+                  class="text-decoration-none lead text-black"
+                  >omegahary88@gmail.com</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md">
+            <img
+              class="img-fluid"
+              src="images/contact.svg"
+              alt="gambar-kontak"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="p-3 bg-success text-light text-center position-relative">
+      <div class="container">
+        <p class="lead mt-3">&copy Made by Hary Capri, using Bootstrap 5</p>
+      </div>
+    </footer>
+  </body>
+</html>

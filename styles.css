@@ -1,0 +1,381 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  width: 50px;
+  color: #0d3a25;
+  transition: all 500ms ease;
+}
+
+#myBtn:hover {
+  color: #7a7a7a; /* Add a dark-grey background on hover */
+  background-color: rgb(0, 0, 0);
+}
+
+.navbar {
+  backdrop-filter: blur(1.5px);
+  transition: all 500ms ease;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-right: 200px;
+  padding-left: 200px;
+}
+
+.sticky-navbar.scrolling {
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  padding: 0px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+/* Warna latar belakang saat dropdown sedang aktif */
+.dropdown-menu .dropdown-item.active,
+.dropdown-menu .dropdown-item:active {
+  background-color: #198762;
+}
+
+.about {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.container-banner {
+  margin-top: 125px;
+}
+
+.coloumn {
+  display: flex;
+  padding: 10px;
+  width: 70%;
+  margin: 0px auto;
+}
+
+.main-banner h1 {
+  margin-top: 0px;
+}
+.main-banner .col {
+  margin-right: 30px;
+  display: block;
+  border: 4px solid white;
+  border-radius: 4px;
+  cursor: pointer;
+  color: black;
+}
+
+.main-banner .col a {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.main-banner .col a p {
+  color: white;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 20px;
+}
+
+.main-banner .col a p:hover {
+  color: #145436;
+}
+
+.main-banner .col:hover {
+  background-color: white;
+  border-color: white;
+}
+
+.main-banner {
+  margin-top: 100px;
+  width: 100%;
+  height: 80vh;
+  position: relative;
+}
+
+.bg_image {
+  transition: 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  background-size: cover;
+}
+
+.card {
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px;
+}
+
+.card-body {
+  padding: 25px;
+  margin-top: -15px;
+  width: 100%;
+}
+
+.timeline {
+  padding: 50px;
+  position: relative;
+  margin-top: 0px;
+}
+
+.timeline-title {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.container-timeline {
+  padding: 10px 50px;
+  position: relative;
+  width: 50%;
+  opacity: 0;
+  z-index: 2;
+  transition: all 1.6s;
+  transform: translateX(50px);
+}
+
+.show {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+.text-box {
+  padding: 30px 50px;
+  background: white;
+  position: relative;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.left-container {
+  left: 0%;
+}
+
+.right-container {
+  left: 50%;
+}
+
+.container-timeline img {
+  position: absolute;
+  border-radius: 50%;
+  width: 120px;
+  right: -60px;
+  top: 32px;
+  z-index: 1;
+  padding: 0px;
+}
+
+.right-container img {
+  left: -60px;
+}
+
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 100%;
+  background-image: linear-gradient(to bottom, grey 50%, transparent 50%);
+  background-size: 100% 70px;
+  top: 0;
+  left: 50%;
+  margin-left: -3px;
+  z-index: 0;
+
+  animation: moveline 9s linear forwards;
+}
+
+@keyframes moveline {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 96%;
+  }
+}
+
+.text-box h2 {
+  font-weight: 600;
+}
+
+.text-box small {
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.left-container-arrow {
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 65px;
+  z-index: 1;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid white;
+  right: -15px;
+}
+.right-container-arrow {
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 65px;
+  z-index: 1;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 15px solid white;
+  left: -15px;
+}
+
+.c-item {
+  height: 680px;
+}
+
+.c-img {
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
+}
+
+.img-container {
+  background-image: url("faculty/images/fik-background.jpg");
+  background-size: cover;
+}
+
+#example_paginate > ul > li.paginate_button.page-item.active {
+  background: #0d3a25;
+}
+
+.paginate_button a {
+  color: #198762;
+}
+
+.paginate_button.active a {
+  background-color: #198762;
+  color: white;
+}
+
+.paginate_button.page-item.active {
+  border-color: #198762;
+}
+
+@media only screen and (max-width: 991px) {
+  .navbar {
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .nav-link {
+    font-size: 17px;
+  }
+
+  .main-banner .coloumn {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+  }
+
+  .main-banner .col {
+    width: 100%;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .bg_image {
+    background-position: center;
+  }
+
+  .container-banner {
+    margin-top: 0px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .navbar {
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .main-banner .coloumn {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+  }
+
+  .main-banner h1 {
+    margin-top: 30px;
+  }
+
+  .main-banner .col {
+    margin-bottom: 20px;
+    margin-top: 0px;
+  }
+
+  .bg_image {
+    background-position: center;
+  }
+  .container-banner {
+    margin-top: 0px;
+  }
+
+  .timeline {
+    margin-top: 50px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .timeline::after {
+    left: 31px;
+  }
+  .container-timeline {
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 0px;
+  }
+  .text-box {
+    font-size: 16px;
+    width: 100%;
+  }
+  .text-box small {
+    margin-bottom: 10px;
+  }
+  .right-container {
+    left: 0;
+  }
+
+  .left-container img,
+  .right-container img {
+    left: -80px;
+  }
+
+  .left-container-arrow,
+  .right-container-arrow {
+    border-right: 15px solid #fff;
+    border-left: 0px;
+    left: -15px;
+  }
+
+  .container-timeline img {
+    padding: 10px;
+    margin-left: 5px;
+  }
+
+  .location {
+    margin-top: 0px;
+  }
+}

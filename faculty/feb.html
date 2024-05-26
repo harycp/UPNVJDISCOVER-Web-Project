@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile UPN</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="css/feb/styles.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="../js/index.js"></script>
+  </head>
+  <body>
+    <button
+      onclick="topFunction()"
+      id="myBtn"
+      class="bi bi-arrow-up-circle-fill bi-lg bg-transparent"
+      title="Go to top"
+      style="font-size: 36px"
+    ></button>
+    <!--Navbar-->
+    <nav
+      class="navbar navbar-expand-lg bg-transparant navbar-light fixed-top sticky-navbar"
+    >
+      <div class="container">
+        <a href="#" class="navbar-brand d-block d-lg-none">
+          <span class="fs-4 fw-bolder text-success">UPNVJ</span
+          ><span class="fs-4 fw-bold text-success-emphasis">Discover</span>
+        </a>
+        <button
+          class="navbar-toggler ms-auto"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item fs-5">
+              <a href="../index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item fs-5 dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Faculty
+              </a>
+              <ul class="dropdown-menu bg-body-secondary">
+                <li>
+                  <a class="dropdown-item" href="#">Ekonomi dan Bisnis</a>
+                </li>
+                <li><a class="dropdown-item" href="fk.html">Kedokteran</a></li>
+                <li><a class="dropdown-item" href="ft.html">Teknik</a></li>
+                <li>
+                  <a class="dropdown-item" href="fisip.html"
+                    >Ilmu Sosial dan Politik</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="fik.html">Ilmu Komputer</a>
+                </li>
+                <li><a class="dropdown-item" href="fh.html">Hukum</a></li>
+                <li>
+                  <a class="dropdown-item" href="fikes.html">Kesehatan</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item fs-5">
+              <a href="#Accreditation" class="nav-link">Accreditation</a>
+            </li>
+            <li class="nav-item fs-5">
+              <a href="#location" class="nav-link">Location</a>
+            </li>
+          </ul>
+        </div>
+
+        <a href="#" class="navbar-brand d-none d-lg-block">
+          <span class="fs-4 fw-bolder text-success">UPNVJ</span
+          ><span class="fs-4 fw-bold text-success-emphasis">Discover</span></a
+        >
+      </div>
+    </nav>
+
+    <!-- Top Section -->
+    <section
+      class="img-header"
+      style="background-image: url(images/feb-background.jpg)"
+    >
+      <div
+        class="color-overlay d-flex flex-column justify-content-center align-items-center"
+      >
+        <div class="container text-overlay">
+          <h1 class="text-success-emphasis fw-bold">
+            Fakultas Ekonomi dan Bisnis
+          </h1>
+          <p class="lead text-black fs-5 fw-normal">
+            Fakultas Ekonomi dan Bisnis UPNVJ : Fakultas yang berfokus pada
+            pengembangan ilmu akademik yang komprehensif seperti manajemen,
+            ekonomi, akuntansi serta yang bertujuan untuk mencetak pemimpin
+            bisnis masa depan.
+          </p>
+          <a
+            href="https://feb.upnvj.ac.id/"
+            target="_blank"
+            class="btn btn-success btn-lg"
+            >Website Resmi</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Prodi Section -->
+    <section id="prodi">
+      <div class="container py-5">
+        <h1 class="text-center fw-bolder pt-5 text-success-emphasis">
+          Study program
+        </h1>
+        <div class="row row-cols-1 row-cols-md-3 text-center g-3 py-5">
+          <div class="col">
+            <div class="card bg-light text-dark">
+              <img
+                src="images/perbankan.svg"
+                class="card-img-top p-2"
+                alt="gambar-perbankan"
+              />
+              <div class="card-body">
+                <h3 class="card-title">D3 Perbankan dan Keuangan</h3>
+                <p class="card-text">
+                  Prodi ini berfokus pada pelatihan manajemen keuangan,
+                  perbankan, dan aspek fundamental dalam industri tentunya agar
+                  mahasiswa dapat siap dalam regulasi keuangan perbankan
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card bg-light text-dark">
+              <img
+                src="images/akuntan.svg"
+                class="card-img-top p-2"
+                alt="gambar-akuntan"
+              />
+              <div class="card-body">
+                <h3 class="card-title">D3 Akuntansi</h3>
+                <p class="card-text">
+                  Berfokus praktis di kelola data keuangan, akuntansi dasar,
+                  audit, perpajakan, perangkat lunak akuntansi. Serta tanggap
+                  dalam mengelola catatan laporan keuangan.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card bg-light text-dark">
+              <img
+                src="images/s1-akuntan.svg"
+                class="card-img-top p-2"
+                alt="gambar-akuntan"
+              />
+              <div class="card-body">
+                <h3 class="card-title">S1 Akuntansi</h3>
+                <p class="card-text">
+                  Mengkaji lebih mendalam akuntansi, mempelajari lebih banyak
+                  seperti Laporan keuangan, audit,dll. Difokuskan menjadi audit
+                  internal, akuntansi forensik, sistem informasi akuntansi.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card bg-light text-dark">
+              <img
+                src="images/s1-manajemen.svg"
+                class="card-img-top p-2"
+                alt="gambar-manajemen"
+              />
+              <div class="card-body">
+                <h3 class="card-title">S1 Manajemen</h3>
+                <p class="card-text">
+                  Berfokus tentang teori, praktik yang mencakup sumber daya
+                  manusia, keuangan, operasi, strategi bisnis juga pengambilan
+                  keputusan, analisis data, dll.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card bg-light text-dark">
+              <img
+                src="images/s1-ekp.svg"
+                class="card-img-top p-2"
+                alt="gambar-ekp"
+              />
+              <div class="card-body">
+                <h3 class="card-title">S1 Ekonomi Pembangunan</h3>
+                <p class="card-text">
+                  Prodi ini mempelajari studi tentang teori ekonomi, kebijakan
+                  pembangunan, dan pertumbuhan ekonomi. Materi mencakup analisis
+                  mikro dan makro, ekonomi regional dan masih banyak lagi.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card bg-light text-dark">
+              <img
+                src="images/s1-syariah.svg"
+                class="card-img-top p-2"
+                alt="gambar-syariah"
+              />
+              <div class="card-body">
+                <h3 class="card-title">S1 Ekonomi Syariah</h3>
+                <p class="card-text">
+                  Mengedepankan prinsip-prinsip ekonomi dalam Islam seperti
+                  sistem keuangan yang sesuai syariah, investasi yang halal,
+                  perbankan tanpa bunga, dan prinsip lainnya.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col mx-auto">
+            <div class="card bg-light text-dark">
+              <img
+                src="images/s2-manajemen.svg"
+                class="card-img-top p-2"
+                alt="gambar-manajemen"
+              />
+              <div class="card-body">
+                <h3 class="card-title">S2 Magister Manajemen</h3>
+                <p class="card-text">
+                  fokus pada pengembangan manajerial tingkat lanjut tentang
+                  teori manajemen. Untuk mengelola organisasi secara efektif
+                  dalam lingkungan bisnis besar yang dinamis.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col mx-auto">
+            <div class="card bg-light text-dark">
+              <img
+                src="images/s2-akuntansi.svg"
+                class="card-img-top p-2"
+                alt="gambar-akuntan"
+              />
+              <div class="card-body">
+                <h3 class="card-title">S2 Magister Akuntansi</h3>
+                <p class="card-text">
+                  Berisikan prinsip akuntansi, audit, perpajakan, dan analisis
+                  keuangan. Serta mempersiapkan untuk ahli dalam melacak,
+                  menganalisis, dan melaporkan informasi keuangan.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Akreditasi Section-->
+    <section id="Accreditation" class="tabs-section">
+      <h1 class="text-center mb-5 fw-bolder pt-5 text-success-emphasis">
+        Study Program Accreditation
+      </h1>
+      <ul class="container tabs">
+        <li>D3 Perbankan dan Keuangan</li>
+        <li>D3 Akuntansi</li>
+        <li>S1 Akuntansi</li>
+        <li>S1 Manajemen</li>
+        <li>S1 Ekonomi Pembangunan</li>
+        <li>S1 Ekonomi Syariah</li>
+        <li>S2 Magister Manajemen</li>
+        <li>S2 Magister Akuntansi</li>
+      </ul>
+
+      <div class="container container-akre">
+        <div class="content-akre">
+          <img src="images/A-akre.svg" alt="" />
+          <p class="lead">
+            Berdasarkan Keputusan Keputusan BAN-PT No.
+            6195/SK/BAN-PT/Akred/Dipl-III/X/2020. Sejak tanggal 06 Oktober 2020
+            hingga 06 Oktober 2025.
+          </p>
+        </div>
+        <div class="content-akre">
+          <img src="images/A-akre.svg" alt="" />
+          <p class="lead">
+            FEB berhasil mendapatkan akreditasi A dari Badan Akreditasi Nasional
+            Perguruan Tinggi (BAN-PT) yang ditetapkan pada Rabu, 23 September
+            2020 berlaku hingga 2025.
+          </p>
+        </div>
+        <div class="content-akre">
+          <img src="images/A-akre.svg" alt="" />
+          <p class="lead">
+            Berdasarkan hasil keputusan yang dikeluarkan oleh BAN-PT No.
+            148/SK/BAN-PT/Ak-PPJ/S/I/2021. Sejak tanggal 30 Desember 2020 hingga
+            30 Desember 2025.
+          </p>
+        </div>
+        <div class="content-akre">
+          <img src="images/A-akre.svg" alt="" />
+          <p class="lead">
+            Berdasarkan hasil keputusan yang dikeluarkan oleh BAN-PT No.
+            114/SK/BAN-PT/Ak-PPJ/S/I/2021. Sejak tanggal 30 Desember 2020 hingga
+            30 Desember 2025.
+          </p>
+        </div>
+        <div class="content-akre">
+          <img src="images/B-akre.svg" alt="" />
+          <p class="lead">
+            Berdasarkan hasil keputusan yang dikeluarkan oleh BAN-PT No.
+            3374/SK/BAN-PT/Akred/S/IX/2019. Sejak tanggal 04 September 2019
+            hingga 4 September 2024.
+          </p>
+        </div>
+        <div class="content-akre">
+          <img src="images/B-akre.svg" alt="" />
+          <p class="lead">
+            Berdasarkan hasil keputusan yang dikeluarkan oleh BAN-PT No.
+            4005/SK/BAN-PT/Akred/S/X/2019. Sejak tanggal 22 Oktober 2019 hingga
+            22 Oktober 2024.
+          </p>
+        </div>
+        <div class="content-akre">
+          <img src="images/B-akre.svg" alt="" />
+          <p class="lead">
+            Berdasarkan hasil keputusan yang dikeluarkan oleh BAN-PT No.
+            872/SK/BAN-PT/Ak-PPJ/M/II/2022. Sejak tanggal 30 September 2021
+            hingga 30 September 2026.
+          </p>
+        </div>
+        <div class="content-akre">
+          <img src="images/IO-akre.svg" alt="" />
+          <p class="lead">
+            Berdasarkan Keputusan Menteri Pendidikan, Kebudayaan, Riset, dan
+            Teknologi Nomor 151/E/0/2022 tentang Izin Pembukaan Program Studi
+            Akuntansi Program Magister di UPNVJ.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--More Info Section-->
+    <section
+      class="about bg-light text-dark text-center text-sm-start pb-sm-0 pt-5 pb-5"
+    >
+      <div class="container pb-md-5">
+        <div class="d-flex align-items-center">
+          <div>
+            <h1 class="fw-bold">
+              <span class="text-success">Other</span>
+              <span>Important</span>
+              <span>Information</span>
+            </h1>
+            <p class="lead">
+              Informasi penting terkait pelaksanaan penerimaan calon mahasiswa
+              baru Universitas Pembangunan Nasional "Veteran" Jakarta dapat
+              dilihat di link berikut
+            </p>
+            <a
+              href="https://penmaru.upnvj.ac.id/id/sarjana-s-1.html"
+              target="_blank"
+              class="btn btn-success btn-lg"
+            >
+              Cari Tahu!
+            </a>
+          </div>
+          <img
+            class="img-fluid w-50 d-none d-sm-block ms-2 p-5 w"
+            src="images/more-section.svg"
+            alt="gambar-upn"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location">
+      <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active c-item">
+            <img
+              src="images/feb-location.png"
+              class="d-block w-100 c-img"
+              alt="Slide 1"
+            />
+            <div class="carousel-caption top-0 mt-4">
+              <p class="text-uppercase fs-3 mt-5">Location</p>
+              <p class="display-1 fs-1 fw-bold text-capitalize">
+                Jakarta - Pondok Labu
+              </p>
+              <button
+                class="btn btn-success px-4 py-2 fs-5 mt-5"
+                data-bs-toggle="modal"
+                data-bs-target="#booking-modal"
+              >
+                <a
+                  href="https://maps.app.goo.gl/isQuPLN2e185GxiDA"
+                  target="_blank"
+                  class="text-decoration-none text-light p-3"
+                  >Take a look</a
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="p-2 bg-success text-light text-center position-relative">
+      <div class="container">
+        <p class="lead mt-3">&copy Made by Hary Capri, using Bootstrap 5</p>
+      </div>
+    </footer>
+  </body>
+</html>

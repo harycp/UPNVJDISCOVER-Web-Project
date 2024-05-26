@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile UPN</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="css/fik/styles.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="../js/index.js"></script>
+  </head>
+  <body>
+    <button
+      onclick="topFunction()"
+      id="myBtn"
+      class="bi bi-arrow-up-circle-fill bi-lg bg-transparent"
+      title="Go to top"
+      style="font-size: 36px"
+    ></button>
+    <!--Navbar-->
+    <nav
+      class="navbar navbar-expand-lg bg-transparant navbar-light fixed-top sticky-navbar"
+    >
+      <div class="container">
+        <a href="#" class="navbar-brand d-block d-lg-none">
+          <span class="fs-4 fw-bolder text-success">UPNVJ</span
+          ><span class="fs-4 fw-bold text-success-emphasis">Discover</span>
+        </a>
+        <button
+          class="navbar-toggler ms-auto"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item fs-5">
+              <a href="../index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item fs-5 dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Faculty
+              </a>
+              <ul class="dropdown-menu bg-body-secondary">
+                <li>
+                  <a class="dropdown-item" href="feb.html"
+                    >Ekonomi dan Bisnis</a
+                  >
+                </li>
+                <li><a class="dropdown-item" href="fk.html">Kedokteran</a></li>
+                <li><a class="dropdown-item" href="ft.html">Teknik</a></li>
+                <li>
+                  <a class="dropdown-item" href="fisip.html"
+                    >Ilmu Sosial dan Politik</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="fik.html">Ilmu Komputer</a>
+                </li>
+                <li><a class="dropdown-item" href="fh.html">Hukum</a></li>
+                <li>
+                  <a class="dropdown-item" href="fikes.html">Kesehatan</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item fs-5">
+              <a href="#Accreditation" class="nav-link">Accreditation</a>
+            </li>
+            <li class="nav-item fs-5">
+              <a href="#location" class="nav-link">Location</a>
+            </li>
+          </ul>
+        </div>
+
+        <a href="#" class="navbar-brand d-none d-lg-block">
+          <span class="fs-4 fw-bolder text-success">UPNVJ</span
+          ><span class="fs-4 fw-bold text-success-emphasis">Discover</span></a
+        >
+      </div>
+    </nav>
+
+    <!-- Top Section -->
+    <section
+      class="img-header"
+      style="background-image: url(images/fik-background.jpg)"
+    >
+      <div
+        class="color-overlay d-flex flex-column justify-content-center align-items-center"
+      >
+        <div class="container text-overlay">
+          <h1 class="text-success-emphasis fw-bold">Fakultas Ilmu Komputer</h1>
+          <p class="lead text-black fs-5 fw-normal">
+            Fakultas Ilmu Komputer UPNVJ: Studi IT terbarukan, memiliki
+            fasilitas modern, kolaborasi industri, dengan pengembangan
+            pendidikan profesional.
+          </p>
+          <a
+            href="https://new-fik.upnvj.ac.id/"
+            target="_blank"
+            class="btn btn-success btn-lg"
+            >Website Resmi</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Prodi Section -->
+    <section id="prodi">
+      <div class="container py-5">
+        <h1 class="text-center fw-bolder pt-5 text-success-emphasis">
+          Study program
+        </h1>
+        <div class="row row-cols-1 row-cols-md-3 text-center g-3 py-5">
+          <div class="col">
+            <div class="card bg-light text-dark">
+              <img
+                src="images/sistem-informasi-d3.svg"
+                class="card-img-top p-2"
+                alt="gambar-sisford3"
+              />
+              <div class="card-body">
+                <h3 class="card-title">D3 Sistem Informasi</h3>
+                <p class="card-text">
+                  Prodi ini memusatkan pada teknologi informasi, dari
+                  pemrograman hingga manajemen sistem informasi dan keamanan
+                  komputer untuk aplikasi yang efisien dan jaringan yang handal.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card bg-light text-dark">
+              <img
+                src="images/sistem-informasi-s1.svg"
+                class="card-img-top p-2"
+                alt="gambar-sisfors1"
+              />
+              <div class="card-body">
+                <h3 class="card-title">S1 Sistem Informasi</h3>
+                <p class="card-text">
+                  Berisikan konsep konsep basis data, dan analisis data spasial,
+                  rekayasa perangkat lunak, pengembangan sistem cerdas, serta
+                  aplikasi teknologi terkini untuk website dan mobile.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card bg-light text-dark">
+              <img
+                src="images/Informatika-s1.svg"
+                class="card-img-top p-2"
+                alt="gambar-infors1"
+              />
+              <div class="card-body">
+                <h3 class="card-title">S1 Informatika</h3>
+                <p class="card-text">
+                  Prodi ini berfokus pada pemrograman, dan sistem komputer untuk
+                  pemecahan masalah. analisis algoritma, basis data, keamanan
+                  komputer, serta pengembangan aplikasi cerdas.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Akreditasi Section-->
+    <section id="Accreditation" class="tabs-section">
+      <h1 class="text-center mb-5 fw-bolder pt-5 text-success-emphasis">
+        Study Program Accreditation
+      </h1>
+      <ul class="container tabs">
+        <li>D3 Sistem Informasi</li>
+        <li>S1 Sistem Informasi</li>
+        <li>S1 Informatika</li>
+      </ul>
+
+      <div class="container container-akre">
+        <div class="content-akre">
+          <img src="images/B-akre.svg" alt="" />
+          <p class="lead">
+            Berdasarkan Keputusan BAN-PT No.
+            1151/SK/BAN-PT/Ak-PPJ/Dipl-III/III/2021. Sejak tanggal 27 Februari
+            2021 hingga 27 Februari 2026
+          </p>
+        </div>
+        <div class="content-akre">
+          <img src="images/B-akre.svg" alt="" />
+          <p class="lead">
+            Berdasarkan Hasil Keputusan BAN-PT
+            NO.2277/SK/BAN-PT/Akred/S/VII/2019. Berlaku Sejak tanggal 09 Juli
+            2019 hingga 09 Juli 2024
+          </p>
+        </div>
+        <div class="content-akre">
+          <img src="images/B-akre.svg" alt="" />
+          <p class="lead">
+            Berdasarkan Hasil terbaru dari Keputusan BAN-PT No.
+            1016/SK/BAN-PT/Ak-PPJ/S/II/202 19 Februari 2021 hingga 19 Februari
+            2026
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--More Info Section-->
+    <section
+      class="about bg-light text-dark text-center text-sm-start pb-sm-0 pt-5 pb-5"
+    >
+      <div class="container pb-md-5">
+        <div class="d-flex align-items-center">
+          <div>
+            <h1 class="fw-bold">
+              <span class="text-success">Other</span>
+              <span>Important</span>
+              <span>Information</span>
+            </h1>
+            <p class="lead">
+              Informasi penting terkait pelaksanaan penerimaan calon mahasiswa
+              baru Universitas Pembangunan Nasional "Veteran" Jakarta dapat
+              dilihat di link berikut
+            </p>
+            <a
+              href="https://penmaru.upnvj.ac.id/id/sarjana-s-1.html"
+              target="_blank"
+              class="btn btn-success btn-lg"
+            >
+              Cari Tahu!
+            </a>
+          </div>
+          <img
+            class="img-fluid w-50 d-none d-sm-block ms-2 p-5 w"
+            src="images/more-section.svg"
+            alt="gambar-upn"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location">
+      <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active c-item">
+            <img
+              src="images/fik-location.png"
+              class="d-block w-100 c-img"
+              alt="Slide 1"
+            />
+            <div class="carousel-caption top-0 mt-4">
+              <p class="text-uppercase fs-3 mt-5">Location</p>
+              <p class="display-1 fs-1 fw-bold text-capitalize">
+                Jakarta - Pondok Labu
+              </p>
+              <button
+                class="btn btn-success px-4 py-2 fs-5 mt-5"
+                data-bs-toggle="modal"
+                data-bs-target="#booking-modal"
+              >
+                <a
+                  href="https://maps.app.goo.gl/isQuPLN2e185GxiDA"
+                  target="_blank"
+                  class="text-decoration-none text-light p-3"
+                  >Take a look</a
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="p-2 bg-success text-light text-center position-relative">
+      <div class="container">
+        <p class="lead mt-3">&copy Made by Hary Capri, using Bootstrap 5</p>
+      </div>
+    </footer>
+  </body>
+</html>
